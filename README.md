@@ -4,9 +4,10 @@ This repository contains a collection of sample applications demonstrating how t
 
 ## Contents
 The repository includes the following samples:
-* civic-auth:
-    * [NextJs](packages/civic-auth/nextjs): NextJs sample app integrated with Civic Auth.
+* **Civic Auth**:
+    * [NextJs](packages/civic-auth/nextjs): NextJs sample app integration with Civic Auth.
     * server:
-        * [Express]: A minimal Express.js app integrated with **Civic Auth** for user authentication using OAuth 2.0 and PKCE.
-* civic-auth-web3:
-    * [Wagmi](packages/civic-auth-web3/wagmi): reference implementation of the simple Wagmi integration with the Civic Auth Web3 SDK.
+        * [Express](packages/civic-auth/server/express): A minimal Express.js app integrated with Civic Auth for user authentication using OAuth 2.0 and PKCE.
+
+* **Civic Auth Web3**:
+    * [Wagmi](packages/civic-auth-web3/wagmi): reference implementation of a simple Wagmi app integration with Civic Auth Web3 SDK.
