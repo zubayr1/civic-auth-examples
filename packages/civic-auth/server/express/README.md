@@ -30,7 +30,7 @@ SESSION_SECRET=your_secure_session_secret
 
 ## 🏃 Running the App
 
-Start the Express server using Yarn:
+Start the Express server using _Yarn_:
 
 ```bash
 yarn start
@@ -52,4 +52,3 @@ Once authenticated, visit `http://localhost:3000/admin/hello`.
 ---
 
 Feel free to reach out to the [Civic Support Team](mailto:support@civic.com) for any questions or assistance with integration.
-

@@ -26,3 +26,7 @@ yarn dev
 ```
 
 The server will start on `http://localhost:3000`.
+
+---
+
+Feel free to reach out to the [Civic Support Team](mailto:support@civic.com) for any questions or assistance with integration.
