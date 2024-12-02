@@ -6,7 +6,6 @@ import {
   isLoggedIn,
   getUser,
   buildLoginUrl,
-  refreshTokens
 } from '@civic/auth/server';
 
 const app = express();
@@ -18,15 +17,15 @@ app.use(cookieParser());
 const config = {
   clientId: process.env.CLIENT_ID!,
   redirectUrl: `http://localhost:${PORT}/auth/callback`,
-  oauthServer: process.env.OAUTH_SERVER ?? 'https://auth.civic.com/oauth',
+  oauthServer: process.env.OAUTH_SERVER, // optional: leave blank to use the default OAuth server
 };
 
-// Map express cookies to the CookieStorage interface ( using default cookie configuration )
+// Tell Civic how to get cookies from your node server
 class ExpressCookieStorage extends CookieStorage {
   constructor(private req: Request, private res: Response) {
     super({
-      secure: false
-    })
+      secure: process.env.NODE_ENV === "production",
+    });
   }
 
   get(key: string): string | null {
@@ -66,18 +65,13 @@ const authMiddleware = async (req: Request, res: Response, next: NextFunction) =
   next();
 };
 
-// Apply authentication middleware to /admin routes
+// Apply authentication middleware to any routes that need it
 app.use('/admin', authMiddleware);
 
-// Protected route to get logged-in user information
+// Get the logged-in user information.
 app.get('/admin/hello', async (req: Request, res: Response) => {
   const user = await getUser(req.storage);
   res.send(`Hello, ${user?.name}!`);
-});
-
-app.get('/admin/refresh', async (req: Request, res: Response) => {
-  await refreshTokens(req.storage, config);
-  res.send('Tokens refreshed');
 });
 
 // Start the Express server
