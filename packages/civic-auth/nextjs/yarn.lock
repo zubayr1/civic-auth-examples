@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@civic/auth@file:../../../../civic-auth/packages/civic-auth-client/civic-auth-0.0.1-beta.28-4.tgz":
-  version "0.0.1-beta.28-4"
-  resolved "file:../../../../civic-auth/packages/civic-auth-client/civic-auth-0.0.1-beta.28-4.tgz#fbf8b1dca2a1e8de622c06369add085ce2c895c5"
+"@civic/auth@file:../../../../civic-auth/packages/civic-auth-client/civic-auth-0.0.1-beta.28-8.tgz":
+  version "0.0.1-beta.28-8"
+  resolved "file:../../../../civic-auth/packages/civic-auth-client/civic-auth-0.0.1-beta.28-8.tgz#24901132c8e0ad697a524896213c2ae6728f6b6d"
   dependencies:
     "@tanstack/react-query" "^5.56.2"
     clsx "^2.1.1"
