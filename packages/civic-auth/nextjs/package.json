@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@civic/auth": "/Users/kevincolgan/code/civic-auth/packages/civic-auth-client/civic-auth-0.0.1-beta.28-8.tgz",
+    "@civic/auth": "^0.1.0",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
