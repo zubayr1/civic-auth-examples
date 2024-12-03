@@ -1,0 +1,18 @@
+{
+  "name": "civic-auth-hono-example",
+  "type": "module",
+  "description": "A sample hono app with Civic Auth",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@civic/auth": "0.1.0",
+    "@hono/node-server": "^1.13.7",
+    "dotenv": "^16.4.6",
+    "hono": "^4.6.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1"
+  }
+}
