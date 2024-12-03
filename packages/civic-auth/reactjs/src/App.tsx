@@ -5,9 +5,8 @@ const App = () => {
   return (
       <CivicAuthProvider
         clientId={"YOUR CLIENT ID"}
-        modalIframe={false}
       >
-        <UserButton displayMode="redirect"/>
+        <UserButton/>
       </CivicAuthProvider>
   );
 }
