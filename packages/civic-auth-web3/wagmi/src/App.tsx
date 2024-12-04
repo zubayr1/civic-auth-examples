@@ -48,7 +48,7 @@ const AppContent = () => {
   const { isConnected } = useAccount();
   const balance = useBalance({
     address: userHasWallet(userContext) ? userContext.walletAddress as `0x${string}` : undefined,
-  })
+  });
 
   // A function to connect an existing civic embedded wallet
   const connectExistingWallet = () => { 
