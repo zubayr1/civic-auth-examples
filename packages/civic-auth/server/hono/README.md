@@ -32,7 +32,7 @@ SESSION_SECRET=your_secure_session_secret
 Start the hono server using _Yarn_:
 
 ```bash
-yarn dv
+yarn dev
 ```
 
 The server will start on `http://localhost:3000`.
