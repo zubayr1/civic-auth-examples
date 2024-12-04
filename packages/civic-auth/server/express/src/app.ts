@@ -7,6 +7,9 @@ import {
   getUser,
   buildLoginUrl,
 } from '@civic/auth/server';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT ?  parseInt(process.env.PORT) : 3000;
@@ -17,7 +20,6 @@ app.use(cookieParser());
 const config = {
   clientId: process.env.CLIENT_ID!,
   redirectUrl: `http://localhost:${PORT}/auth/callback`,
-  oauthServer: process.env.OAUTH_SERVER, // optional: leave blank to use the default OAuth server
 };
 
 // Tell Civic how to get cookies from your node server
@@ -28,11 +30,11 @@ class ExpressCookieStorage extends CookieStorage {
     });
   }
 
-  get(key: string): string | null {
+  async get(key: string): Promise<string | null> {
     return this.req.cookies[key];
   }
 
-  set(key: string, value: string): void {
+  async set(key: string, value: string): Promise<void> {
     this.res.cookie(key, value, this.settings);
   }
 }

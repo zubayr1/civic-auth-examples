@@ -163,10 +163,10 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
-"@civic/auth@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@civic/auth/-/auth-0.1.0.tgz#1d41b23e1b632fc73f73993329fe5faa751832b1"
-  integrity sha512-5PdlTeGOfKQvMyMIXRlJnBNFHA6Z8c9tMYNqjPYsuLC77SZbFYUiE6cLtUaMBFqEs3td0G4IyouHe+6I+mkV2g==
+"@civic/auth@*":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@civic/auth/-/auth-0.1.1.tgz#1b8d7112b9e11e4c9c0701b95740a45627c4cc30"
+  integrity sha512-5alqGaOudaOBO9XJXtB63OyO3gB1kGf9DAr/w6LlFh3BBJXdmnQQRVq3FytwqeBQX0di06Cot0eERaFBU8ZGVA==
   dependencies:
     "@tanstack/react-query" "^5.56.2"
     clsx "^2.1.1"

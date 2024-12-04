@@ -32,7 +32,6 @@ const app = new Hono<Env>();
 const config = {
   clientId: process.env.CLIENT_ID!,
   redirectUrl: `http://localhost:3000/auth/callback`, // change to your domain when deploying
-  oauthServer: process.env.OAUTH_SERVER!, // optional: leave blank to use the default OAuth server
 };
 
 // Middleware to attach CookieStorage to each request

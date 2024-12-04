@@ -1,4 +1,14 @@
+# CivicAuth NextJS example App
+
+A reference implementation of a simple NextJS integration with the Civic Auth SDK (@civic/auth).
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## 🚀 Prerequisites
+
+- **Yarn**: Ensure you have _Yarn_ installed.
+- **Civic Auth Account**: Obtain your clientId from the [Civic Auth Dashboard](https://auth.civic.com/dashboard).
+
 
 ## Getting Started
 
