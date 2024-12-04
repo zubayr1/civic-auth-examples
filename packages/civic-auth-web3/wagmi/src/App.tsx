@@ -47,7 +47,8 @@ const AppContent = () => {
   const { connect, connectors } = useConnect();
   const { isConnected } = useAccount();
   const balance = useBalance({
-    address: userHasWallet(userContext) ? userContext.walletAddress as `0x${string}` : undefined,
+    address: userHasWallet(userContext)
+      ? userContext.walletAddress as `0x${string}` : undefined,
   });
 
   // A function to connect an existing civic embedded wallet
@@ -61,12 +62,7 @@ const AppContent = () => {
   const createWallet = () => {
     if (userContext.user && !userHasWallet(userContext)) {
       // Once the wallet is created, we can connect it straight away
-      return userContext.createWallet().then(() => new Promise<void>((resolve) => {
-        setTimeout(() => {
-          connectExistingWallet();
-          resolve();
-        }, 200);
-      }));
+      return userContext.createWallet().then(connectExistingWallet);
     }
   };
 
