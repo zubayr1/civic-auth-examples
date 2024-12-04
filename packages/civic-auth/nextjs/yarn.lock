@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@civic/auth@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@civic/auth/-/auth-0.1.1.tgz#1b8d7112b9e11e4c9c0701b95740a45627c4cc30"
-  integrity sha512-5alqGaOudaOBO9XJXtB63OyO3gB1kGf9DAr/w6LlFh3BBJXdmnQQRVq3FytwqeBQX0di06Cot0eERaFBU8ZGVA==
+"@civic/auth@*":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@civic/auth/-/auth-0.1.2.tgz#a788603b0141f20c4c4bf7e1026e7324bb967894"
+  integrity sha512-ARSzQ/1drvtI4bfznwQFMFByNojS1CfcFRceY/P80MBrsMYiFBwC72dlWovekpIgVEDQLVPPIE1/MOwSne5aGg==
   dependencies:
     "@tanstack/react-query" "^5.56.2"
     clsx "^2.1.1"
