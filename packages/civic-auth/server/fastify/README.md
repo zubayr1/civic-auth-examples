@@ -1,11 +1,11 @@
 # Civic Auth Fastify Example
 
-This is an example implementation of Civic Auth with a Fastify backend.
+This is an example implementation of Civic Auth with a Fastify backend using Bun.
 
 ## Prerequisites
 
-- Bun 1.0 or higher
-- A Civic client ID from auth.civic.com
+- **Bun**: you need version 1.0 or higher
+- **Civic Auth Account**: Obtain your clientId from the [Civic Auth Dashboard](https://auth.civic.com/dashboard).
 
 ## Setup
 

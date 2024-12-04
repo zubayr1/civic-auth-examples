@@ -6,7 +6,7 @@
     "dev": "tsx watch src/index.ts"
   },
   "dependencies": {
-    "@civic/auth": "0.1.0",
+    "@civic/auth": "*",
     "@hono/node-server": "^1.13.7",
     "dotenv": "^16.4.6",
     "hono": "^4.6.12"

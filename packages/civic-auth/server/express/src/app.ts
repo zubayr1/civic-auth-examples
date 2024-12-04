@@ -7,6 +7,9 @@ import {
   getUser,
   buildLoginUrl,
 } from '@civic/auth/server';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 import 'dotenv/config';
 
@@ -20,8 +23,7 @@ app.use(cookieParser());
 const config = {
   clientId: process.env.CLIENT_ID!,
   redirectUrl: `http://localhost:${PORT}/auth/callback`,
-  oauthServer: process.env.OAUTH_SERVER ?? "https://auth.civic.com/oauth",
-}
+};
 
 // Tell Civic how to get cookies from your node server
 class ExpressCookieStorage extends CookieStorage {

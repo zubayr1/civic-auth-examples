@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# CivicAuth ReactJS example App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A reference implementation of a simple ReactJS integration with the Civic Auth SDK (@civic/auth).
 
-Currently, two official plugins are available:
+This is a [Vite](https://vitejs.dev) project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Prerequisites
 
-## Expanding the ESLint configuration
+- **Yarn**: Ensure you have _Yarn_ installed.
+- **Civic Auth Account**: Obtain your clientId from the [Civic Auth Dashboard](https://auth.civic.com/dashboard).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠 Installation
 
-- Configure the top-level `parserOptions` property like this:
+Install Dependencies using _Yarn_:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+yarn install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Add VITE_CLIENT_ID to your .env file
+rename or copy the .env.example file and set the VITE_CLIENT_ID to the clientId from the Civic Auth Dashboard
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🏃 Running the App
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+Start the app using Yarn:
+
+```bash
+yarn dev
 ```
+
+The server will start on `http://localhost:3000`.
+
+---
+
+Feel free to reach out to the [Civic Support Team](mailto:support@civic.com) for any questions or assistance with integration.

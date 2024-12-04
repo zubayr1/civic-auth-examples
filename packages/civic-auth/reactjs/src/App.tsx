@@ -1,10 +1,10 @@
-import React from "react";
 import { CivicAuthProvider, UserButton } from "@civic/auth/react";
 
+const CLIENT_ID = import.meta.env.VITE_CLIENT_ID;
 const App = () => {
   return (
       <CivicAuthProvider
-        clientId={"YOUR CLIENT ID"}
+        clientId={CLIENT_ID}
       >
         <UserButton/>
       </CivicAuthProvider>

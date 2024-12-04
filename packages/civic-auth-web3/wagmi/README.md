@@ -7,7 +7,7 @@ This is a [Vite](https://vitejs.dev) project bootstrapped with [`create-wagmi`](
 ## 🚀 Prerequisites
 
 - **Yarn**: Ensure you have _Yarn_ installed.
-- **Civic Auth Account**: Obtain your `CLIENT_ID` from the [Civic Auth Dashboard](https://auth.civic.com/dashboard).
+- **Civic Auth Account**: Obtain your clientId from the [Civic Auth Dashboard](https://auth.civic.com/dashboard).
 
 ## 🛠 Installation
 
@@ -16,6 +16,9 @@ Install Dependencies using _Yarn_:
 ```bash
 yarn install
 ```
+
+## Add VITE_CLIENT_ID to your .env file
+rename or copy the .env.example file and set the VITE_CLIENT_ID to the clientId from the Civic Auth Dashboard
 
 ## 🏃 Running the App
 
