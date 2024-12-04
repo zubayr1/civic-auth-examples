@@ -40,7 +40,7 @@ The server will start on `http://localhost:3000`.
 
 ## 🔍 Usage
 
-Visit `http://localhost:3000/auth/login` to trigger a login process.
+Visit `http://localhost:3000` to trigger a login process.
 
 Once authenticated, visit `http://localhost:3000/admin/hello`.
 
