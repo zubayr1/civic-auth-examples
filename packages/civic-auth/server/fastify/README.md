@@ -1,6 +1,6 @@
 # Civic Auth Fastify Example
 
-This is an example implementation of Civic Auth with a Fastify backend.
+This is an example implementation of Civic Auth with a Fastify backend using Bun.
 
 ## Prerequisites
 
